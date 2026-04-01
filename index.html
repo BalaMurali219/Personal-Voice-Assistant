@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Voice Assistant🎤</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="logo.jpg" alt="Bala" class="avatar">
+            <h1>Bala...</h1>
+            <p>Your personal voice Assistant🤖</p>
+            <ul class="features">
+                <li>Play youtube songs</li>
+                <li>Tell jokes</li>
+                <li>Wikipedia answers</li>
+                <li>Time queries</li>
+                <li>web navigation</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/BalaMurali219" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bala-murali-bugata-3a1a61298/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:balabugata3@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- main content -->
+         <div class="main-content">
+            <div class="header">
+                <h1>Murali Voice Assistant</h1>
+                <p>Talk to Murali using text or your microphone!</p>
+            </div>
+            <div class="chat-container" id="chatContainer">
+                <div class="message assistant">
+                    <div class="message-bubble">
+                        🤖 Yo! I'm Bala – your personal voice assistant 💡
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" class="text-input" id="textInput" placeholder="Say someting to Murlai..." onkeypress="handleKeyPress(event)">
+                <button class="speak-btn" id="speakBtn" onclick="toggleListening()" title="Click to speak">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+            <div id="status" class="status" style="display: none;"></div>
+         </div>
+    </div>
+
+        <!-- listening-indicator -->
+    <div class="listening-indicator" id="listeningIndicator">
+        Listening...<br>
+        <small>Speak clearly into your microphone</small>
+    </div>
+
+    <!-- help bar -->
+    <!-- <div class="help-bar">
+        <h3>💡 Example Commands</h3>
+        <ul>
+            <li>Play Despacito</li>
+            <li>What time is it?</li>
+            <li>Tell me a joke</li>
+            <li>Who is Albert Einstein?</li>
+            <li>Open Gmail</li>
+            <li>Open GitHub</li>
+            <li>Open LinkedIn</li>
+        </ul>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
